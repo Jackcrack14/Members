@@ -1,12 +1,119 @@
-.header-cont{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.datalist-table{
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.header-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.header-cont input {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.header-cont button {
+  padding: 8px 15px;
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.datalist-table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
-tr {
-  width: auto;
+
+.datalist-table th, .datalist-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
+
+.datalist-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.datalist-table input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.datalist-table button {
+  background-color: #f44336;
+  color: white;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.datalist-table button:hover {
+  background-color: #d32f2f;
+}
+
+
+
+.pagination {
+  margin-top: 20px;
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:first-child,
+.pagination button:last-child {
+  margin: 0;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+}
+
+.pagination button:active {
+  background-color: #999;
+}
+
+@media (max-width: 600px) {
+  .header-cont {
+    flex-direction: column;
+  }
+}
+/* https://dark-shield-55e.notion.site/Admin-Dashboard-3bc214bb876e4453ae3cd23288548689 */

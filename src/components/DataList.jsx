@@ -38,7 +38,9 @@ function DataList({ members, handleDelete, setMembers, selectedIds, setSelectedI
     if(!isChecked) {
       const allId = members.map(item => item.id)
       setSelectedIds(allId)
-    } 
+    } else {
+      setSelectedIds([])
+    }
   }
   const handleChange = (id, checked) => {
     if (checked) {
@@ -53,7 +55,7 @@ function DataList({ members, handleDelete, setMembers, selectedIds, setSelectedI
       <thead>
         <tr>
           <th>
-            <input type="checkbox" onChange={handleAll}/>
+            <input type="checkbox" onChange={handleAll} />
           </th>
           <th>Name</th>
           <th>Email</th>

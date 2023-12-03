@@ -13,7 +13,7 @@ function Header({ query, handleQuery, handleDeleteMany, selectedIds }) {
         />
       </div>
       <div>
-        <button onClick={() =>handleDeleteMany()}>Delete</button>
+        <button onClick={handleDeleteMany}>Delete</button>
       </div>
     </div>
   );
